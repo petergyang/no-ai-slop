@@ -31,6 +31,12 @@ For detect requests, make sure the response names each pattern found with a quot
 6. Is formatting slop removed: Emoji headings, decorative bold, bullets that should be prose, headers over tiny sections?
 7. Are colons sentence case unless grammar, a proper noun, a title, or code requires otherwise?
 8. Are em dashes used sparingly: Usually none in short copy, and only 1-2 in longer drafts when they clearly help?
+9. Are anaphora, label sentences, stacked tail clauses, mixed-vehicle metaphors, and mirrored explanation pairs fixed?
+10. Are parallel declarative stacks, noun-inventory subjects, abstract framing, point-announcing lead-ins, and harder-question escalations removed?
+11. Are transformation pivots (including in headings), forced triads, comma-list overload, and nominalization stacks rewritten into concrete claims?
+12. Does every paragraph pass the contribution test, with no repetition disguised as development?
+13. Are forced optimism endings, automatic moral lessons, and sanitized story arcs cut in favor of the real result, cost, or open question?
+14. Are generic specificity, hedging clusters, chatbot tells, and unproved superlatives removed or replaced with named facts?
 
 ## Final read
 
