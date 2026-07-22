@@ -83,6 +83,50 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Em dashes.** Do not use them as a default rhythm crutch. In short copy, use none. In longer drafts, 1-2 are fine if they clearly beat commas, periods, or parentheses. Remove clusters and decorative dashes.
 
+**Anaphora.** "Every tree, every field, every sign that anything had existed." Repeating a word at the start of three or more parallel clauses sounds like a speech. Collapse to one plain sentence: "Nothing was left above the surface." Watch for every/every/every, no/no/no, each/each/each.
+
+**Label sentences.** A 3–6 word sentence that only names a pattern already visible nearby: "Three capacity tracks." "One entity per track." Cut it, or fold the label into the sentence that carries the fact.
+
+**Stacked tail clauses.** An already-complete sentence with a second qualifying or locative phrase tacked on after a comma, especially a metaphor callback: "That is where value collects once answers are cheap, at the edges the sand does not reach." End the sentence when the claim lands. Give the callback its own sentence, or cut it.
+
+**Mixed-vehicle metaphors.** One sentence that forces two or three unrelated physical pictures at once. If you need "and" to name a second scene the reader must picture, cut one vehicle. Prefer plain claim over a fresh landscape invented for one line.
+
+**Mirrored explanation pairs.** "The first strategy buys depth. The second buys coverage." Matching grammar that categorizes instead of explaining. Name the relationship in one sentence.
+
+**Parallel declarative stacking.** Three or more sentences in a row built as `[noun] [verb] [noun]` with no connective, reorderable without changing meaning. Merge into a sentence that states how the pieces relate, or cut the weakest assertion.
+
+**Noun inventory subjects.** Five or more nouns front-loaded as a comma subject before a weak predicate ("remain separate requirements," "are factors," "matter"). Collapse to the constraint that actually limits the outcome.
+
+**Abstract framing.** "The problem was X." "The challenge is…" "The key insight is…" "The reality is…" These announce a category instead of showing the concrete thing. Start with what was actually true.
+
+**Point-announcing lead-ins.** "The number carries the point." "This detail proves it." "Here is what changed." Delete the announcement and let the fact open the sentence.
+
+**Harder-question escalations.** "X will happen. The harder question is Y." Labels depth instead of delivering it. Ask Y directly, or state the harder claim directly. Cut "the harder/real/bigger/deeper question/part/challenge/problem/issue is."
+
+**Transformation pivots.** "X stops being Y and becomes Z." "X becomes Z." "X is turning into Z." Including in headings. State the end state as a fact, or name the event that caused the change. "The marvel becomes a commodity" becomes "The marvel is already priced for everyone," or name what changed the price.
+
+**Forced rule of three.** "Clear, compelling, and transformative." AI pads 1–2 real items into a polished triad. Let the evidence set the count. One accurate item beats three padded ones.
+
+**Comma-list overload.** Inline lists of 5+ items the reader cannot hold. Cap at 3, occasionally 4 when every item is load-bearing. Past that, group into higher-level components rather than deleting real items. Never stack two lists in one sentence.
+
+**Nominalization stacks.** "The implementation of X facilitates the optimization of Y." Turn the noun back into a verb and name who acts: "A weekly review helps the team decide."
+
+**Repetition disguised as development.** Claim, expanded claim, metaphorical restatement, "in other words," summary. Each paragraph must add evidence, a mechanism, an example, a qualification, an objection, a consequence, or an inference. If it only restates, delete it.
+
+**Forced optimism endings.** "Despite these challenges, the future remains bright." Unearned hopeful closes. End on the result, the cost, the open question, or the next action.
+
+**Automatic moral lessons.** "This story reminds us that true progress is possible only when…" Do not append a moral the author did not write. Show the decision and its cost; let the reader conclude.
+
+**Sanitized story arcs.** Manageable conflict, reconciliation, lesson, stability restored. Preserve what actually happened: irreversible costs, mixed motives, unfair outcomes, unresolved disagreement.
+
+**Generic specificity.** "The vibrant community celebrates its rich heritage while embracing modernity." Sounds specific, names nothing. Replace atmosphere with a particular object, phrase, place, disagreement, or awkward detail.
+
+**Hedging clusters.** Several of "arguably," "in many ways," "to some extent," "may well," "it seems that," "broadly speaking" in one piece. One hedge can be honest. A cluster is fear of commitment. Commit to the claim; qualify only with a named doubt.
+
+**Chatbot tells.** "Certainly," "Absolutely," "I'd be happy to," "Great question," or restating the user's question before answering. Cut them and answer.
+
+**Unproved superlatives.** "Largest," "first," "best," "world-class," "unique" without evidence. Use the specific fact, or cut the claim.
+
 ## Workflow
 
 1. Read the full draft before editing.
