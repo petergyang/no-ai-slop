@@ -40,3 +40,4 @@ For detect requests, make sure the response names each pattern found with a quot
 4. Would the edited draft sound natural if read to a sharp colleague?
 5. Does the final output include the full edited draft and a short **What changed** section?
 6. For detect requests, does the response name each pattern with a quoted line and a short fix, without rewriting, scoring, or claiming AI authorship?
+7. For detect requests, do the findings follow the shapes shown in examples.md (pattern name, quoted line, short fix)?

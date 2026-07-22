@@ -20,6 +20,8 @@ The patterns it detects include:
 | Negative listing | "Not a X. Not a Y. A Z." |
 | Dramatic fragmentation | "That's it. That's the whole thing." |
 
+See [examples.md](examples.md) for a before/after pair for every pattern.
+
 It also enforces the fundamentals that make writing good: Lead with the point when it helps, use active voice, untangle hard-to-follow sentences, and prefer concrete numbers over abstractions.
 
 ## Install
@@ -54,6 +56,7 @@ You get every pattern it found each with the quoted line.
 
 1. `SKILL.md`: The editing rules and workflow.
 2. `eval.md`: Pass/fail checks the skill runs on its own edits.
+3. `examples.md`: Before/after pairs for every pattern and a sample to test detect mode.
 
 ## Who made this
 
