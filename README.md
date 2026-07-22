@@ -1,6 +1,6 @@
 # No AI slop
 
-This skill removes 20+ patterns of AI slop from your writing and it can also help you detect slop as well.
+This skill removes 40+ patterns of AI slop from your writing and it can also help you detect slop as well.
 
 ## What it catches
 
@@ -19,6 +19,14 @@ The patterns it detects include:
 | Synonym cycling | the agent, then the assistant, then the tool |
 | Negative listing | "Not a X. Not a Y. A Z." |
 | Dramatic fragmentation | "That's it. That's the whole thing." |
+| Anaphora | "Every tree, every field, every sign..." |
+| Transformation pivots | "X becomes Y" / "X is turning into Y" |
+| Parallel declarative stacks | Reorderable `[noun] [verb] [noun]` assertion grids |
+| Abstract framing | "The problem was X." / "The key insight is..." |
+| Forced optimism endings | "Despite these challenges, the future remains bright." |
+| Hedging clusters | "arguably... in many ways... to some extent..." |
+
+It also catches label sentences, stacked tail clauses, mixed-vehicle metaphors, noun-inventory subjects, point-announcing lead-ins, harder-question escalations, forced triads, comma-list overload, nominalization stacks, repetition disguised as development, automatic moral lessons, sanitized story arcs, generic specificity, chatbot tells, and unproved superlatives. See [SKILL.md](SKILL.md) for the full list.
 
 It also enforces the fundamentals that make writing good: Lead with the point when it helps, use active voice, untangle hard-to-follow sentences, and prefer concrete numbers over abstractions.
 
