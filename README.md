@@ -28,6 +28,8 @@ Paste this into Claude Code, Codex, or your favorite AI harness:
 
 "Install this skill globally: [https://github.com/petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)"
 
+Or run this command `npx skills add https://github.com/petergyang/no-ai-slop`.
+
 ## Use
 
 **1. Edit a draft.** Paste it and invoke the skill:
