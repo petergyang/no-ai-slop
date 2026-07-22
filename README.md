@@ -50,6 +50,18 @@ You get back the edited draft plus a short What changed section. The skill makes
 
 You get every pattern it found each with the quoted line.
 
+**3. Calibrate to your voice (optional).** Paste a past post or email with your draft:
+
+```
+/no-ai-slop here are two posts I wrote, then my draft
+
+[your past writing]
+
+[your past writing]
+
+[your draft]
+```
+
 ## Files
 
 1. `SKILL.md`: The editing rules and workflow.

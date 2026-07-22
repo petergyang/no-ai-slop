@@ -21,9 +21,11 @@ If the audience or format is unclear, ask one question: Who is this for and wher
 
 If the goal is unclear, ask what the reader should think, feel, or do after reading it.
 
+If the user includes past writing alongside the draft (an earlier post, email, or article), treat it as voice samples: derive voice signals from the samples and the draft together. Do not ask for samples up front. If the draft is under roughly 150 words and its voice is thin, you may offer once: "Want to paste a past post or email so the edit keeps your voice?" Proceed without samples if the user declines or does not answer.
+
 ## Editing principles
 
-- **Preserve the writer's real voice.** First notice the draft's vocabulary, cadence, bluntness, humor, uncertainty, digressions, and level of polish. Keep the traits that feel personal to the writer. Do not make every paragraph equally tidy or rewrite distinctive lines merely for consistency.
+- **Preserve the writer's real voice.** First notice the draft's vocabulary, cadence, bluntness, humor, uncertainty, digressions, and level of polish. Keep the traits that feel personal to the writer. Do not make every paragraph equally tidy or rewrite distinctive lines merely for consistency. When voice samples are provided, notice their vocabulary, cadence, sentence length, bluntness, humor, and pet phrases, and weigh them alongside the draft. Samples inform style only: never import claims, examples, stats, or phrases from a sample into the draft.
 - **Make the minimum effective edit.** Fix AI patterns, errors, repetition, and unclear passages. Leave strong human sentences alone. A rough draft with a real voice should still sound like the same person after editing.
 - **Lead with the point when the setup adds nothing.** Cut generic throat-clearing. Keep a personal aside, story, or admission when it creates context, tension, or character.
 - **Front-load only when it improves clarity.** Put conclusions early when that helps the reader. Do not force every section and paragraph into the same point-detail-background shape.
@@ -86,8 +88,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 ## Workflow
 
 1. Read the full draft before editing.
-2. Identify the core point and 3-5 voice signals to preserve, such as vocabulary, cadence, bluntness, humor, uncertainty, or digressions. Keep this note internal. If you cannot identify the core point, ask the user.
+2. Identify the core point and 3-5 voice signals to preserve, such as vocabulary, cadence, bluntness, humor, uncertainty, or digressions. Keep this note internal. If voice samples were provided, derive the voice-signal note from the samples plus the draft and keep track of which signals came from samples. If you cannot identify the core point, ask the user.
 3. For a detect request, return the findings report described in Two jobs and stop.
 4. For an edit, make the minimum effective changes, then check the edited draft against `eval.md` yourself.
 5. If any check fails, fix the draft and run the checks again.
-6. Output the full edited draft and a short **What changed** section.
+6. Output the full edited draft and a short **What changed** section. If voice samples informed the edit, say so.

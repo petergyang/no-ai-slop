@@ -16,6 +16,8 @@ For detect requests, make sure the response names each pattern found with a quot
 8. Does the draft use active voice with human subjects where possible?
 9. Does the edit keep useful edge and preserve structure unless the structure was hurting the piece?
 10. Are genuinely tangled sentences fixed while clear spoken cadence, fragments, and changes in pace remain intact?
+11. If voice samples were provided, does the edit match their cadence and vocabulary without copying any content, claims, or phrases from the samples into the draft?
+12. If no samples were provided, was the edit made normally without demanding them?
 
 ## Words to cut
 
