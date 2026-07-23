@@ -51,6 +51,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Binary contrasts.** "This is not X. It's Y." / "The question isn't X, it's Y." / "It's not just X but Y." State Y directly. "The question isn't the model. It's the eval." becomes "The eval matters more than the model."
 
+**Reveal setups.** A generic noun-phrase lead-in that delays a point the sentence could state directly: "The fix is not a faster reader. It is AI doing the first pass." / "The answer is not to pick one provider, it is to make the model swappable." / "The problem is not the tool." Formulas like "The fix is," "The answer is," "The problem is," "The hard part is," "The real question is" promise a reveal and pad the delivery. Cut the setup and state the point: "The fix is not a faster reader, it is a first pass by AI" becomes "Let AI do the first pass so the reader only checks it."
+
 **Throat-clearing openers.** "Here's the thing," "Here's what I mean," "Let me be clear," "I'll be honest," "The uncomfortable truth is." Cut them and state the point.
 
 **Faux-insight setups.** "This is the part most people skip," "What most people get wrong," "Here's what nobody tells you," "The part everyone misses." These flatter the writer as the lone expert. Cut the setup and make the claim stand on its own. "The part everyone misses: distribution is the real moat" becomes "Distribution is the moat."
@@ -71,9 +73,21 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Dramatic fragmentation.** "X. And Y. And Z." or "That's it. That's the whole thing." Use complete sentences.
 
+**Dramatic defining-relatives.** "The risk that sinks you is the one nobody logged." / "The clause that burns you is the one you skimmed." / "The thing that matters is the thing you missed." The "the X that [does something to you]" frame builds suspense around a plain subject. Name the thing and say what about it matters: "The clause that burns you is the one you skimmed" becomes "You skim the clause that later costs you."
+
+**Transformation cliches.** "It stops being a document and becomes a task." / "The report turns into a liability." / "That is when data becomes evidence." The becomes/turns-into/stops-being frame dramatizes an ordinary change of state. Describe the change directly, or cut it if nothing actually changes: "A framework stops being a PDF and becomes a to-do list" becomes "Turn each obligation in the framework into a task with an owner."
+
+**Confidence flourishes.** "delivered with total confidence," "with no second opinion," "sounds sure," "confident guess dressed as a fact." Tacking a "with total confidence" tail onto a claim is decoration. State what happened: "The model answers with total confidence" becomes "The model gives the same fluent answer whether it is right or wrong."
+
 **Robotic rhythm.** Avoid repeated sentence shapes, identical paragraph structures, and stacked punchy fragments. Vary the shape only when it helps the point.
 
 **Rhetorical setups.** "What if I told you...", "Think about it:", "Plot twist:", and self-answered "Question? Answer." pairs. Drop them and make the point.
+
+**Self-pointing "that is" claims.** "That is exactly why they are dangerous," "That is what happens when nobody checks," "That is the point." The sentence points back at itself to announce its own significance instead of just stating the next fact. Cut the pointer and connect the idea plainly: "Agents act on instructions. That is exactly why they are dangerous" becomes "Agents act on instructions, which is what makes them dangerous." Watch "exactly" as the tell here and on its own: "exactly where the loss hides," "exactly the claim that needs a human." It manufactures precision the sentence has not earned. Cut it unless it marks a genuinely specific point.
+
+**Manufactured payoffs.** "That is the difference between X and Y," "the line between X and Y," "the difference is Z." The frame inflates an ordinary distinction into a revelation. State the distinction directly: "That is the difference between a guess and an answer worth reviewing" becomes "A reviewed answer is worth more than a guess."
+
+**Reification metaphors.** Mid-draft figurative swaps that dress a plain fact as a clever image: "a liability with good grammar," "obligations wearing a document costume," "a data graveyard," "where deals go to wait." This is the fake-profound kicker moved off the final line, so treat it the same way. Replace the metaphor with the literal point ("obligations wearing a document costume" becomes "obligations buried in a PDF nobody acts on"), unless the image is genuinely the writer's own and earns its place.
 
 **Fake-profound kickers.** Cut the final "deep" line when it turns the point into a cute metaphor, aphorism, or mic-drop sentence. Do not rewrite it into a better metaphor. Do not preserve the rhythm. Delete it, then end on the clearest concrete sentence already in the draft. If the ending needs more closure, add a plain takeaway or next action.
 

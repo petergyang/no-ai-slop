@@ -32,6 +32,10 @@ For detect requests, make sure the response names each pattern found with a quot
 7. Are colons sentence case unless grammar, a proper noun, a title, or code requires otherwise?
 8. Are em dashes used sparingly: Usually none in short copy, and only 1-2 in longer drafts when they clearly help?
 9. Are Unicode characters that stand in for plain ASCII (curly quotes, fancy dashes, ellipsis glyphs, invisible spaces, math and arrow symbols) replaced with their ASCII equivalents, and left as Unicode only where the glyph is genuinely meant?
+10. Are reveal setups ("The fix is," "The answer is," "The problem is," "The hard part is") cut or turned into a direct statement?
+11. Are self-pointing "that is" claims ("that is exactly why," "that is what happens when") and manufactured payoffs ("the difference between X and Y," "the line between X and Y") replaced with the plain point, and is a bare "exactly" cut where it manufactures precision the sentence has not earned?
+12. Are dramatic defining-relatives ("the risk that sinks you," "the clause that burns you"), transformation cliches ("becomes a," "stops being a," "turns into a"), and confidence flourishes ("with total confidence," "with no second opinion") replaced with direct statements?
+13. Are mid-text reification metaphors ("a liability with good grammar," "obligations wearing a document costume," "a data graveyard") replaced with the literal point unless the image is genuinely the writer's own?
 
 ## Final read
 
