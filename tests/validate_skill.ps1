@@ -32,6 +32,8 @@ Assert-Contains 'references/french-academic.md' 'Ne pas transformer une associat
 Assert-Contains 'eval.md' '## French academic and research writing'
 Assert-Contains 'eval.md' 'association and causation'
 Assert-Contains 'README.md' 'French academic and research writing'
+Assert-Contains 'README.md' '(?s)## Use\s+\*\*1\. Edit a draft\.'
+Assert-Contains 'README.md' '(?s)2\. `eval\.md`: Pass/fail checks the skill runs on its own edits\.\s+## Who made this'
 Assert-Contains 'agents/openai.yaml' 'French academic'
 
 $caseCount = (Select-String -Path 'tests/french-academic-cases.md' -Pattern '^## FR-' -AllMatches).Count
