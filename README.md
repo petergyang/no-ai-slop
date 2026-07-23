@@ -19,6 +19,7 @@ The patterns it detects include:
 | Synonym cycling | the agent, then the assistant, then the tool |
 | Negative listing | "Not a X. Not a Y. A Z." |
 | Dramatic fragmentation | "That's it. That's the whole thing." |
+| Unicode stand-ins | curly quotes, "fancy" dashes, invisible spaces, → and × |
 
 It also enforces the fundamentals that make writing good: Lead with the point when it helps, use active voice, untangle hard-to-follow sentences, and prefer concrete numbers over abstractions.
 

@@ -83,6 +83,40 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Em dashes.** Do not use them as a default rhythm crutch. In short copy, use none. In longer drafts, 1-2 are fine if they clearly beat commas, periods, or parentheses. Remove clusters and decorative dashes.
 
+**Unicode characters.** AI drafts leak "smart" Unicode where plain ASCII was meant: curly quotes, fancy dashes, ellipsis glyphs, invisible spaces, and math or arrow symbols. For each one, ask a simple question: is this normal Unicode that can be replaced with ASCII, or does it genuinely need to be Unicode and is what the writer meant (a real name, a quoted source, a language that uses it, a math or code context where the exact glyph matters)? If it must stay, leave it. Otherwise replace it with the ASCII equivalent below.
+
+| Character | Code point | Replace with |
+|-----------|-----------|--------------|
+| `‘` | U+2018 | `'` |
+| `’` | U+2019 | `'` |
+| `“` | U+201C | `"` |
+| `”` | U+201D | `"` |
+| `‐` | U+2010 | `-` |
+| `‑` | U+2011 | `-` |
+| `–` | U+2013 | `-` |
+| `—` | U+2014 | `-` |
+| `−` | U+2212 | `-` |
+| `…` | U+2026 | `...` |
+| `•` | U+2022 | `-` or `*` |
+| `·` | U+00B7 | `.` |
+| ` ` (no-break space) | U+00A0 | normal space |
+| ` ` (narrow no-break space) | U+202F | normal space |
+| ` ` (thin space) | U+2009 | normal space |
+| zero-width space | U+200B | remove |
+| zero-width non-joiner | U+200C | remove |
+| zero-width joiner | U+200D | remove |
+| byte-order mark | U+FEFF | remove |
+| `→` | U+2192 | `->` |
+| `←` | U+2190 | `<-` |
+| `⇒` | U+21D2 | `=>` |
+| `≤` | U+2264 | `<=` |
+| `≥` | U+2265 | `>=` |
+| `≠` | U+2260 | `!=` |
+| `×` | U+00D7 | `*` |
+| `÷` | U+00F7 | `/` |
+| `／` | U+FF0F | `/` |
+| `：` | U+FF1A | `:` |
+
 ## Workflow
 
 1. Read the full draft before editing.
