@@ -40,3 +40,12 @@ For detect requests, make sure the response names each pattern found with a quot
 4. Would the edited draft sound natural if read to a sharp colleague?
 5. Does the final output include the full edited draft and a short **What changed** section?
 6. For detect requests, does the response name each pattern with a quoted line and a short fix, without rewriting, scoring, or claiming AI authorship?
+
+## French academic and research writing
+
+1. If the draft is French academic or research prose, was `references/french-academic.md` applied?
+2. Are citations, numbers, units, estimates, intervals, p-values, acronyms, method names, and technical terms unchanged unless correction was explicitly requested?
+3. Does the edit preserve warranted uncertainty, study-design limitations, and the distinction between association and causation?
+4. Did the edit avoid inventing sources, mechanisms, populations, explanations, or findings?
+5. Were French stock phrases, vague abstractions, nominalisations, unsupported attribution, and literal English calques fixed only where they weakened the text?
+6. Does French output use a short **Modifications apportées** section and otherwise follow the user's requested language?

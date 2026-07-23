@@ -36,6 +36,20 @@ The repository also contains a skills-only plugin package for ChatGPT and Codex.
 
 ## Use
 
+### French academic and research writing
+
+The skill also edits and audits French academic prose while preserving citations, statistics, technical terms, warranted uncertainty, and the distinction between association and causation.
+
+```text
+/no-ai-slop
+
+Révise ce passage pour un article scientifique en français sans modifier le degré de certitude ni les résultats.
+
+[votre texte]
+```
+
+It detects the language automatically and does not translate unless asked.
+
 **1. Edit a draft.** Paste it and invoke the skill:
 
 ```
@@ -62,6 +76,9 @@ You get every pattern it found each with the quoted line.
 2. `eval.md`: Pass/fail checks the skill runs on its own edits.
 3. `.codex-plugin/plugin.json`: Metadata for the ChatGPT and Codex plugin.
 4. `scripts/build_plugin.py`: Builds and validates the plugin ZIP from the canonical skill files.
+5. `references/english.md`: English-specific editing patterns.
+6. `references/french-academic.md`: French academic and research guidance.
+7. `tests/french-academic-cases.md`: Behavioral regression fixtures.
 
 ## Who made this
 
