@@ -1,5 +1,7 @@
 # No AI slop
 
+English | [Español](README.es.md)
+
 This skill removes 20+ patterns of AI slop from your writing and it can also help you detect slop as well.
 
 ## What it catches
