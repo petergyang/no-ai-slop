@@ -24,9 +24,9 @@ It also enforces the fundamentals that make writing good: Lead with the point wh
 
 ## Install
 
-Paste this into Claude Code, Codex, or your favorite AI harness:
+Install a reviewed, immutable revision rather than the moving default branch. Paste this into Claude Code, Codex, or your favorite AI harness:
 
-"Install this skill globally: [https://github.com/petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)"
+"Install this skill globally from [commit 61c21c351da4dcb40946a11fead978f2078a2c65](https://github.com/angelcontreras/no-ai-bs/tree/61c21c351da4dcb40946a11fead978f2078a2c65)."
 
 ## Use
 
@@ -39,6 +39,8 @@ Paste this into Claude Code, Codex, or your favorite AI harness:
 ```
 
 You get back the edited draft plus a short What changed section. The skill makes the minimum effective edit, then checks its own work against [eval.md](eval.md).
+
+For legal, medical, financial, security, compliance, contractual, or public-policy content, it preserves facts, qualifications, citations, obligations, dates, numbers, and procedures. It flags substantive changes for approval. You can also ask for a suggestion-only review.
 
 **2. Detect slop.** Ask whether a piece reads as AI:
 
@@ -57,7 +59,7 @@ You get every pattern it found each with the quoted line.
 
 ## Who made this
 
-This is one skill from my personal AI operating system. The full library, including my courses and workflows, lives at [Behind the Craft](https://behindthecraft.com).
+This fork is maintained at [angelcontreras/no-ai-bs](https://github.com/angelcontreras/no-ai-bs). It is derived from work by Peter Yang; the original MIT copyright notice remains in [LICENSE](LICENSE).
 
 ## License
 
