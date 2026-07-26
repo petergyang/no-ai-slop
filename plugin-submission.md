@@ -22,9 +22,8 @@ Sources:
 
 ## Starter prompts
 
-1. Edit this draft without flattening my voice.
-2. Flag the AI-slop patterns without rewriting.
-3. Make this clearer and more direct while preserving my tone.
+1. edit (your writing)
+2. Is this slop? (a writing excerpt)
 
 ## Positive test cases
 
@@ -42,4 +41,4 @@ Sources:
 
 ## Release notes
 
-Initial skills-only release. Includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.
+Version 1.0.1 adds the final directory icon and aligns the starter prompts with the edit and detect workflows. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.

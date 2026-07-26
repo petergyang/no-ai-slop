@@ -1,6 +1,6 @@
 {
   "name": "no-ai-slop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remove 20+ AI-slop patterns without flattening the writer's voice.",
   "author": {
     "name": "Peter Yang",
@@ -18,7 +18,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "No AI Slop",
-    "shortDescription": "Remove 20+ AI-slop patterns without flattening your voice.",
+    "shortDescription": "Cut AI slop. Keep your voice.",
     "longDescription": "Edit or audit emails, docs, posts, and other writing for the patterns that make AI-assisted writing feel generic. No AI Slop makes the minimum effective edit, preserves useful details and personality, and explains what changed. Detect mode names the patterns it finds without rewriting or pretending to know whether AI wrote the text. The open-source skill has earned 2.7K+ GitHub stars. Its launch post reached 611K impressions, 10K+ saves, and 13K+ link clicks on X.",
     "developerName": "Peter Yang",
     "category": "Productivity",
@@ -31,11 +31,10 @@
     "privacyPolicyURL": "https://github.com/petergyang/no-ai-slop/blob/main/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/petergyang/no-ai-slop/blob/main/TERMS.md",
     "defaultPrompt": [
-      "Edit this draft without flattening my voice.",
-      "Flag the AI-slop patterns without rewriting.",
-      "Make this clearer and more direct while preserving my tone."
+      "edit (your writing)",
+      "Is this slop? (a writing excerpt)"
     ],
-    "brandColor": "#F15A29",
+    "brandColor": "#D30800",
     "composerIcon": "./assets/no-ai-slop.svg",
     "logo": "./assets/no-ai-slop.svg"
   }

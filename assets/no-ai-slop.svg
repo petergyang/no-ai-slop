@@ -1,8 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
   <title id="title">No AI Slop</title>
-  <desc id="desc">A speech bubble with generic AI sparkles crossed out by an orange slash.</desc>
-  <rect width="512" height="512" rx="112" fill="#FFF9F2"/>
-  <path d="M112 122h288c31 0 56 25 56 56v156c0 31-25 56-56 56H249l-85 67v-67h-52c-31 0-56-25-56-56V178c0-31 25-56 56-56Z" fill="#171717"/>
-  <path d="M205 184l12 31 31 12-31 12-12 31-12-31-31-12 31-12 12-31Zm104 33 15 39 39 15-39 15-15 39-15-39-39-15 39-15 15-39Zm71-61 8 20 20 8-20 8-8 20-8-20-20-8 20-8 8-20Z" fill="#FFF9F2"/>
-  <path d="M105 401 401 105" stroke="#F15A29" stroke-width="52" stroke-linecap="round"/>
+  <desc id="desc">A crisp black shield reading No AI Slop, with AI and Slop crossed out in red.</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#202020"/>
+      <stop offset="1" stop-color="#0D0D0D"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#191919"/>
+      <stop offset="1" stop-color="#090909"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#tile)" stroke="#343434" stroke-width="10"/>
+  <path d="M256 62 406 116v142c0 94-51 165-150 210C157 423 106 352 106 258V116Z"
+        fill="url(#shield)" stroke="#696969" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M256 82 386 128v130c0 82-43 144-130 186-87-42-130-104-130-186V128Z"
+        fill="none" stroke="#2F2F2F" stroke-width="5" stroke-linejoin="round"/>
+  <text x="256" y="202" text-anchor="middle"
+        font-family="Noto Sans, Arial, sans-serif" font-size="61" font-weight="800"
+        letter-spacing="2" fill="#F8F4EC">NO</text>
+  <text x="256" y="287" text-anchor="middle"
+        font-family="Noto Sans, Arial, sans-serif" font-size="72" font-weight="850"
+        letter-spacing="1" fill="#F8F4EC">AI</text>
+  <text x="256" y="371" text-anchor="middle"
+        font-family="Noto Sans, Arial, sans-serif" font-size="62" font-weight="850"
+        letter-spacing="-2" fill="#F8F4EC">SLOP</text>
+  <path d="M171 267H341M148 350H364"
+        fill="none" stroke="#E43B34" stroke-opacity=".84"
+        stroke-width="18" stroke-linecap="round"/>
 </svg>
