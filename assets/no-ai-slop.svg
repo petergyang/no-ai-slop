@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">No AI Slop</title>
+  <desc id="desc">A speech bubble with generic AI sparkles crossed out by an orange slash.</desc>
+  <rect width="512" height="512" rx="112" fill="#FFF9F2"/>
+  <path d="M112 122h288c31 0 56 25 56 56v156c0 31-25 56-56 56H249l-85 67v-67h-52c-31 0-56-25-56-56V178c0-31 25-56 56-56Z" fill="#171717"/>
+  <path d="M205 184l12 31 31 12-31 12-12 31-12-31-31-12 31-12 12-31Zm104 33 15 39 39 15-39 15-15 39-15-39-39-15 39-15 15-39Zm71-61 8 20 20 8-20 8-8 20-8-20-20-8 20-8 8-20Z" fill="#FFF9F2"/>
+  <path d="M105 401 401 105" stroke="#F15A29" stroke-width="52" stroke-linecap="round"/>
+</svg>

@@ -1,6 +1,8 @@
 # No AI slop
 
-This skill removes 20+ patterns of AI slop from your writing and it can also help you detect slop as well.
+This open-source skill removes 20+ patterns of AI slop from your writing without flattening your personal voice. It can also detect slop without guessing whether AI wrote the text.
+
+More than 2,700 people have starred it on GitHub. The [launch post on X](https://x.com/petergyang/status/2079943830024188105) reached 611K impressions, 10K+ saves, and 13K+ link clicks.
 
 ## What it catches
 
@@ -22,11 +24,15 @@ The patterns it detects include:
 
 It also enforces the fundamentals that make writing good: Lead with the point when it helps, use active voice, untangle hard-to-follow sentences, and prefer concrete numbers over abstractions.
 
+I use it during the middle 50% of my writing process to improve spelling, grammar, and clarity. I write or dictate the first draft myself, use AI to edit, then do the final line-by-line pass myself. [Read the full 25/50/25 process.](https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns)
+
 ## Install
 
 Paste this into Claude Code, Codex, or your favorite AI harness:
 
 "Install this skill globally: [https://github.com/petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)"
+
+The repository also contains a skills-only plugin package for ChatGPT and Codex. Tagged releases attach a validated plugin ZIP while the public directory submission is under review.
 
 ## Use
 
@@ -54,6 +60,8 @@ You get every pattern it found each with the quoted line.
 
 1. `SKILL.md`: The editing rules and workflow.
 2. `eval.md`: Pass/fail checks the skill runs on its own edits.
+3. `.codex-plugin/plugin.json`: Metadata for the ChatGPT and Codex plugin.
+4. `scripts/build_plugin.py`: Builds and validates the plugin ZIP from the canonical skill files.
 
 ## Who made this
 
