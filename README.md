@@ -21,8 +21,13 @@ The patterns it detects include:
 | Synonym cycling | the agent, then the assistant, then the tool |
 | Negative listing | "Not a X. Not a Y. A Z." |
 | Dramatic fragmentation | "That's it. That's the whole thing." |
+| Chinese officialese | "高度重视," "持续推进," "取得积极成效" |
+| Chinese framework padding | "以X为引领、以Y为抓手..." |
+| Chinese public-account hooks | "很多人不知道的是..." |
 
 It also enforces the fundamentals that make writing good: Lead with the point when it helps, use active voice, untangle hard-to-follow sentences, and prefer concrete numbers over abstractions.
+
+It now includes Chinese-language patterns too, especially empty official phrasing, four-character phrase stacks, framework sentences without content, translated-English Chinese, and public-account hook templates.
 
 I use it during the middle 50% of my writing process to improve spelling, grammar, and clarity. I write or dictate the first draft myself, use AI to edit, then do the final line-by-line pass myself. [Read the full 25/50/25 process.](https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns)
 
