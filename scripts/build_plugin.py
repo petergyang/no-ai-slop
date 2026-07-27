@@ -45,7 +45,7 @@ def validate_source(manifest: dict) -> None:
     if len(prompts) > 3 or any(len(prompt) > 128 for prompt in prompts):
         raise SystemExit("Starter prompts must contain at most three entries of 128 characters or fewer")
 
-    for source in (ROOT / "SKILL.md", ROOT / "eval.md", ROOT / "assets" / "no-ai-slop.svg"):
+    for source in (ROOT / "SKILL.md", ROOT / "eval.md", ROOT / "assets" / "no-ai-slop.png"):
         if not source.is_file():
             raise SystemExit(f"Missing package source: {source.relative_to(ROOT)}")
 
@@ -63,7 +63,7 @@ def build_plugin(manifest: dict) -> tuple[Path, Path]:
     shutil.copy2(MANIFEST, plugin_root / ".codex-plugin" / "plugin.json")
     shutil.copy2(ROOT / "SKILL.md", skill_root / "SKILL.md")
     shutil.copy2(ROOT / "eval.md", skill_root / "eval.md")
-    shutil.copy2(ROOT / "assets" / "no-ai-slop.svg", plugin_root / "assets" / "no-ai-slop.svg")
+    shutil.copy2(ROOT / "assets" / "no-ai-slop.png", plugin_root / "assets" / "no-ai-slop.png")
     shutil.copy2(ROOT / "LICENSE", plugin_root / "LICENSE")
     shutil.copy2(ROOT / "PRIVACY.md", plugin_root / "PRIVACY.md")
     shutil.copy2(ROOT / "TERMS.md", plugin_root / "TERMS.md")
@@ -81,7 +81,7 @@ def build_plugin(manifest: dict) -> tuple[Path, Path]:
 def validate_build(plugin_root: Path, archive: Path) -> None:
     expected = {
         ".codex-plugin/plugin.json",
-        "assets/no-ai-slop.svg",
+        "assets/no-ai-slop.png",
         "skills/no-ai-slop/SKILL.md",
         "skills/no-ai-slop/eval.md",
         "LICENSE",

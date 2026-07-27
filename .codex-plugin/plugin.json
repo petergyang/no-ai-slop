@@ -1,6 +1,6 @@
 {
   "name": "no-ai-slop",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Remove 20+ patterns of AI slop from any piece of writing without flattening your personal voice.",
   "author": {
     "name": "Peter Yang",
@@ -35,7 +35,7 @@
       "Is this slop? (a writing excerpt)"
     ],
     "brandColor": "#D30800",
-    "composerIcon": "./assets/no-ai-slop.svg",
-    "logo": "./assets/no-ai-slop.svg"
+    "composerIcon": "./assets/no-ai-slop.png",
+    "logo": "./assets/no-ai-slop.png"
   }
 }
