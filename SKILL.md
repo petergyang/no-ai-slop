@@ -39,11 +39,29 @@ If the goal is unclear, ask what the reader should think, feel, or do after read
 - **Preserve useful edge and character.** Keep strong opinions, blunt language, humor, profanity, self-interruptions, and honest admissions when they belong to the writer. Don't replace them with safer or more professional wording.
 - **Keep structure unless it's hurting the piece.** Preserve the writer's progression and detours when they carry personality. If you reorganize, say why in the What changed section.
 
+## Signs you over-edited
+
+Cutting slop and cutting the writer are easy to confuse. Re-read the edit against the original. Any of these means you flattened it, and the fix is to restore the original line, not to write a better version of it.
+
+- Every paragraph came out about the same length.
+- An unusual word became the common synonym, with no rule behind the swap.
+- A joke is gone, or explained.
+- A hedge became an assertion, so the draft claims more than the writer knows.
+- A three-sentence aside became a clause.
+- The draft is much shorter and nothing factual was cut, only character.
+- You changed a line you cannot name a pattern for.
+- You reorganized without saying why in the What changed section.
+- Read aloud, it no longer sounds like the person who wrote it.
+
 ## Words to cut
 
 Banned outright: delve, foster, leverage, utilize, facilitate, empower, streamline, robust, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, realm, beacon, multifaceted, meticulous, intricate, paramount, transformative, elevate, embark, supercharge, harness, ever-evolving.
 
-Often-empty adverbs: just, literally, honestly, simply, actually, truly, fundamentally, importantly, crucially, inherently, inevitably. Cut them when they add nothing. Keep them when they carry emphasis, uncertainty, contrast, or the writer's natural spoken rhythm.
+Replace them rather than deleting them: leverage and utilize become use, facilitate becomes help, streamline becomes simplify, empower becomes let, elevate and supercharge become improve, robust becomes solid or reliable. Removing a jargon word and leaving a hole in the sentence is its own failure.
+
+Redundant modifiers: very unique, completely finished, absolutely essential, extremely important, actual fact, end result, future plans, past history, added bonus, close proximity. Cut the modifier and keep the noun.
+
+Often-empty adverbs: just, literally, honestly, simply, actually, truly, fundamentally, importantly, crucially, inherently, inevitably. Cut them when they add nothing. Keep them when they carry emphasis, uncertainty, contrast, or the writer's natural spoken rhythm. "Just two people showed up" keeps just. "I just wanted to check in" does not.
 
 Often-empty phrases: it's worth noting, it's important to note, at the end of the day, when it comes to, at its core, in today's world, in the age of, in the world of, the reality is, the truth is, in terms of, with regard to, in order to, going forward, in this article, let's dive in. Cut them when they delay the point. Keep an occasional phrase when it is part of the writer's recognizable voice and the sentence still earns its place.
 
@@ -52,6 +70,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 **Binary contrasts.** "This is not X. It's Y." / "The question isn't X, it's Y." / "It's not just X but Y." State Y directly. "The question isn't the model. It's the eval." becomes "The eval matters more than the model."
 
 **Throat-clearing openers.** "Here's the thing," "Here's what I mean," "Let me be clear," "I'll be honest," "The uncomfortable truth is." Cut them and state the point.
+
+**Manufactured enthusiasm.** "Great question," "Absolutely," "Amazing," "Fantastic," "Perfect," and stacked exclamation points. Praise the reader did not ask for reads as filler. One exclamation point carrying real energy is fine. A second one in the same paragraph is not.
 
 **Faux-insight setups.** "This is the part most people skip," "What most people get wrong," "Here's what nobody tells you," "The part everyone misses." These flatter the writer as the lone expert. Cut the setup and make the claim stand on its own. "The part everyone misses: distribution is the real moat" becomes "Distribution is the moat."
 
@@ -62,6 +82,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 **Importance puffery.** "Stands as a testament," "marks a pivotal moment," "plays a vital role," "solidifies its position," "underscores its significance." State the fact and let the reader judge whether it matters. "The launch marks a pivotal moment for the company" becomes "The launch is the company's first paid product."
 
 **Weasel attribution.** "Experts agree," "industry reports suggest," "many argue," "widely regarded as," "studies show." Name the source or cut the claim. If the user has no source, ask instead of inventing one.
+
+**Hedging stacks.** "It might be possible that," "in some cases it could potentially," "generally speaking, typically." One qualifier is honesty and stays. Three stacked on one claim is slop. "It might be possible that some users could potentially prefer this" becomes "some users may prefer this." Thin the stack to one hedge rather than removing all of them, or the edit ends up more confident than the writer.
 
 **Fake-strong verbs.** Prefer "is" and "has" when they are clearer. "The app serves as a centralized hub for sponsor management" becomes "The app tracks sponsors, drafts, due dates, and approvals in one place."
 
@@ -78,6 +100,10 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 **Fake-profound kickers.** Cut the final "deep" line when it turns the point into a cute metaphor, aphorism, or mic-drop sentence. Do not rewrite it into a better metaphor. Do not preserve the rhythm. Delete it, then end on the clearest concrete sentence already in the draft. If the ending needs more closure, add a plain takeaway or next action.
 
 **Summary-recap endings.** "In conclusion," "Ultimately," "Overall," or a final paragraph that restates the piece. The reader was just there. End on the last concrete point, takeaway, or next action instead.
+
+**Assistant sign-offs.** "I hope this helps," "Let me know if you have any questions," "Feel free to reach out," "Happy to help," "Does that make sense?" These survive when a draft is pasted out of a chat window and read as an assistant talking to a user rather than a writer talking to a reader. Delete them. The draft ends at its last real sentence.
+
+**List ceremony.** "First, Second, Third, Finally" on a list that is already numbered, and every bullet forced into the same grammatical shape. Cut the ordinals and keep the steps. Vary bullet length unless the parallel carries meaning. Keep the list itself when the content is a sequence; a five-step procedure should not be flattened into prose to prove a point.
 
 **Formatting slop.** Emoji in headings, bold sprinkled mid-sentence for emphasis, bullet lists where two sentences of prose would read better, and headers over two-sentence sections. Format should follow the content, not decorate it.
 
