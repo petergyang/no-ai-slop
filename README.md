@@ -2,7 +2,7 @@
 
 This open-source skill removes 20+ patterns of AI slop from your writing without flattening your personal voice. It can also detect slop without guessing whether AI wrote the text.
 
-More than 2,700 people have starred it on GitHub. The [launch post on X](https://x.com/petergyang/status/2079943830024188105) reached 611K impressions, 10K+ saves, and 13K+ link clicks.
+More than 2,700 people have starred it on [GitHub](https://github.com/petergyang/no-ai-slop). The [launch post on X](https://x.com/petergyang/status/2079943830024188105) reached 611K impressions, 10K+ saves, and 13K+ link clicks.
 
 ## What it catches
 
@@ -32,7 +32,7 @@ Paste this into Claude Code, Codex, or your favorite AI harness:
 
 "Install this skill globally: [https://github.com/petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)"
 
-The repository also contains a skills-only plugin package for ChatGPT and Codex. Tagged releases attach a validated plugin ZIP while the public directory submission is under review.
+The repository also contains a skills-only plugin package for ChatGPT and Codex. Tagged releases attach a validated plugin ZIP, and the plugin is available in the public ChatGPT directory.
 
 ## Use
 

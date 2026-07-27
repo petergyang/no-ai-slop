@@ -1,7 +1,7 @@
 {
   "name": "no-ai-slop",
-  "version": "1.0.1",
-  "description": "Remove 20+ AI-slop patterns without flattening the writer's voice.",
+  "version": "1.0.2",
+  "description": "Remove 20+ patterns of AI slop from any piece of writing without flattening your personal voice.",
   "author": {
     "name": "Peter Yang",
     "url": "https://creatoreconomy.so"
@@ -19,7 +19,7 @@
   "interface": {
     "displayName": "No AI Slop",
     "shortDescription": "Cut AI slop. Keep your voice.",
-    "longDescription": "Edit or audit emails, docs, posts, and other writing for the patterns that make AI-assisted writing feel generic. No AI Slop makes the minimum effective edit, preserves useful details and personality, and explains what changed. Detect mode names the patterns it finds without rewriting or pretending to know whether AI wrote the text. The open-source skill has earned 2.7K+ GitHub stars. Its launch post reached 611K impressions, 10K+ saves, and 13K+ link clicks on X.",
+    "longDescription": "This plugin removes 20+ patterns of AI slop from any piece of writing without flattening your personal voice. It can also detect slop without guessing whether AI wrote the text.\n\nMore than 2,700 people have starred it on [GitHub](https://github.com/petergyang/no-ai-slop). The [launch post on X](https://x.com/petergyang/status/2079943830024188105) reached 611K impressions, 10K+ saves, and 13K+ link clicks.",
     "developerName": "Peter Yang",
     "category": "Productivity",
     "capabilities": [

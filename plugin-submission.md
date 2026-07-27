@@ -41,4 +41,4 @@ Sources:
 
 ## Release notes
 
-Version 1.0.1 adds the final directory icon and aligns the starter prompts with the edit and detect workflows. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.
+Version 1.0.2 replaces the directory description with clearer product language and direct links to the GitHub repository and launch post. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.
