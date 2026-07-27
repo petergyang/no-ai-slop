@@ -2,7 +2,7 @@
 
 ## Positioning
 
-No AI Slop removes 20+ patterns that make AI-assisted writing sound generic without flattening the writer's voice.
+No AI Slop removes 17 patterns that make AI-assisted writing sound generic without flattening the writer's voice.
 
 Peter uses it during the middle 50% of his writing process to improve spelling, grammar, and clarity. He writes the first draft himself and does the final line-by-line pass himself.
 

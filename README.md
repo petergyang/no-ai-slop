@@ -1,6 +1,6 @@
 # No AI slop
 
-This open-source skill removes 20+ patterns of AI slop from your writing without flattening your personal voice. It can also detect slop without guessing whether AI wrote the text.
+This open-source skill removes 17 patterns of AI slop from your writing without flattening your personal voice. It can also detect slop without guessing whether AI wrote the text.
 
 More than 2,700 people have starred it on [GitHub](https://github.com/petergyang/no-ai-slop). The [launch post on X](https://x.com/petergyang/status/2079943830024188105) reached 611K impressions, 10K+ saves, and 13K+ link clicks.
 

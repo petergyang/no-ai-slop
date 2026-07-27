@@ -86,7 +86,7 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 ## Workflow
 
 1. Read the full draft before editing.
-2. Identify the core point and 3-5 voice signals to preserve, such as vocabulary, cadence, bluntness, humor, uncertainty, or digressions. Keep this note internal. If you cannot identify the core point, ask the user.
+2. Identify the core point and 3-6 voice signals to preserve, such as vocabulary, cadence, bluntness, humor, uncertainty, or digressions. Keep this note internal. If you cannot identify the core point, ask the user.
 3. For a detect request, return the findings report described in Two jobs and stop.
 4. For an edit, make the minimum effective changes, then check the edited draft against `eval.md` yourself.
 5. If any check fails, fix the draft and run the checks again.
