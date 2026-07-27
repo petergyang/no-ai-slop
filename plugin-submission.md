@@ -41,4 +41,4 @@ Sources:
 
 ## Release notes
 
-Version 1.0.3 replaces the directory description with clearer product language and direct links to the GitHub repository and launch post. It also replaces the shield with a clean typographic logo designed to remain legible at plugin size. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.
+Version 1.0.4 replaces the directory description with clearer product language and direct links to the GitHub repository and launch post. It also replaces the shield with Peter Yang's selected No AI Slop wordmark. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.
