@@ -114,7 +114,12 @@ def main() -> None:
     validate_build(plugin_root, archive)
     print(f"Built {archive.relative_to(ROOT)}")
     if args.check:
-        shutil.rmtree(DIST)
+        shutil.rmtree(plugin_root)
+        archive.unlink()
+        try:
+            DIST.rmdir()
+        except OSError:
+            pass
 
 
 if __name__ == "__main__":
