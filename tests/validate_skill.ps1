@@ -33,7 +33,7 @@ Assert-Contains 'eval.md' '## French academic and research writing'
 Assert-Contains 'eval.md' 'association and causation'
 Assert-Contains 'README.md' 'French academic and research writing'
 Assert-Contains 'README.md' '(?s)## Use\s+\*\*1\. Edit a draft\.'
-Assert-Contains 'README.md' '(?s)2\. `eval\.md`: Pass/fail checks the skill runs on its own edits\.\s+## Who made this'
+Assert-Contains 'README.md' '(?s)2\. `eval\.md`: Pass/fail checks the skill runs on its own edits\.\s+3\. `\.codex-plugin/plugin\.json`.*4\. `scripts/build_plugin\.py`.*5\. `references/english\.md`.*6\. `references/french-academic\.md`.*7\. `tests/french-academic-cases\.md`.*## Who made this'
 Assert-Contains 'agents/openai.yaml' 'French academic'
 
 $caseCount = (Select-String -Path 'tests/french-academic-cases.md' -Pattern '^## FR-' -AllMatches).Count

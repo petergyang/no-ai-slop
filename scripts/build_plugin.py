@@ -45,7 +45,13 @@ def validate_source(manifest: dict) -> None:
     if len(prompts) > 3 or any(len(prompt) > 128 for prompt in prompts):
         raise SystemExit("Starter prompts must contain at most three entries of 128 characters or fewer")
 
-    for source in (ROOT / "SKILL.md", ROOT / "eval.md", ROOT / "assets" / "no-ai-slop.png"):
+    for source in (
+        ROOT / "SKILL.md",
+        ROOT / "eval.md",
+        ROOT / "references" / "english.md",
+        ROOT / "references" / "french-academic.md",
+        ROOT / "assets" / "no-ai-slop.png",
+    ):
         if not source.is_file():
             raise SystemExit(f"Missing package source: {source.relative_to(ROOT)}")
 
@@ -58,11 +64,16 @@ def build_plugin(manifest: dict) -> tuple[Path, Path]:
     skill_root = plugin_root / "skills" / "no-ai-slop"
     (plugin_root / ".codex-plugin").mkdir(parents=True)
     (plugin_root / "assets").mkdir(parents=True)
-    skill_root.mkdir(parents=True)
+    (skill_root / "references").mkdir(parents=True)
 
     shutil.copy2(MANIFEST, plugin_root / ".codex-plugin" / "plugin.json")
     shutil.copy2(ROOT / "SKILL.md", skill_root / "SKILL.md")
     shutil.copy2(ROOT / "eval.md", skill_root / "eval.md")
+    shutil.copy2(ROOT / "references" / "english.md", skill_root / "references" / "english.md")
+    shutil.copy2(
+        ROOT / "references" / "french-academic.md",
+        skill_root / "references" / "french-academic.md",
+    )
     shutil.copy2(ROOT / "assets" / "no-ai-slop.png", plugin_root / "assets" / "no-ai-slop.png")
     shutil.copy2(ROOT / "LICENSE", plugin_root / "LICENSE")
     shutil.copy2(ROOT / "PRIVACY.md", plugin_root / "PRIVACY.md")
@@ -84,12 +95,14 @@ def validate_build(plugin_root: Path, archive: Path) -> None:
         "assets/no-ai-slop.png",
         "skills/no-ai-slop/SKILL.md",
         "skills/no-ai-slop/eval.md",
+        "skills/no-ai-slop/references/english.md",
+        "skills/no-ai-slop/references/french-academic.md",
         "LICENSE",
         "PRIVACY.md",
         "TERMS.md",
     }
     actual = {
-        str(path.relative_to(plugin_root))
+        path.relative_to(plugin_root).as_posix()
         for path in plugin_root.rglob("*")
         if path.is_file()
     }
@@ -102,6 +115,11 @@ def validate_build(plugin_root: Path, archive: Path) -> None:
         raise SystemExit("Packaged SKILL.md does not match the canonical file")
     if packaged_eval.read_bytes() != (ROOT / "eval.md").read_bytes():
         raise SystemExit("Packaged eval.md does not match the canonical file")
+    for reference_name in ("english.md", "french-academic.md"):
+        packaged_reference = plugin_root / "skills" / "no-ai-slop" / "references" / reference_name
+        canonical_reference = ROOT / "references" / reference_name
+        if packaged_reference.read_bytes() != canonical_reference.read_bytes():
+            raise SystemExit(f"Packaged {reference_name} does not match the canonical file")
     if not zipfile.is_zipfile(archive):
         raise SystemExit("Plugin archive is not a valid ZIP file")
 
