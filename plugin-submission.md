@@ -6,20 +6,6 @@ No AI Slop removes 20+ patterns that make AI-assisted writing sound generic with
 
 Peter uses it during the middle 50% of his writing process to improve spelling, grammar, and clarity. He writes the first draft himself and does the final line-by-line pass himself.
 
-## Proof
-
-- 2.7K+ GitHub stars as of July 26, 2026
-- 611,392 X impressions
-- 5,234 likes
-- 10,519 saves
-- 13,704 link clicks
-
-Sources:
-
-- https://github.com/petergyang/no-ai-slop
-- https://x.com/petergyang/status/2079943830024188105
-- https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns
-
 ## Starter prompts
 
 1. edit (your writing)
@@ -41,4 +27,4 @@ Sources:
 
 ## Release notes
 
-Version 1.0.4 replaces the directory description with clearer product language and direct links to the GitHub repository and launch post. It also replaces the shield with Peter Yang's selected No AI Slop wordmark. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.
+Version 1.0.5 removes the red strike from the plugin icon and replaces the directory copy with a shorter description based closely on the repository README. It also removes launch metrics from the repository. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.
