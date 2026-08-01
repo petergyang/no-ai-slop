@@ -8,8 +8,8 @@ Peter uses it during the middle 50% of his writing process to improve spelling, 
 
 ## Starter prompts
 
-1. edit (your writing)
-2. Is this slop? (a writing excerpt)
+1. @No AI Slop (text)
+2. @No AI Slop is this slop? (text)
 
 ## Positive test cases
 
@@ -27,4 +27,4 @@ Peter uses it during the middle 50% of his writing process to improve spelling, 
 
 ## Release notes
 
-Version 1.0.5 removes the red strike from the plugin icon and replaces the directory copy with a shorter description based closely on the repository README. It also removes launch metrics from the repository. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.
+Version 1.0.6 uses the new supplied No AI Slop logo, simplifies both starter prompts, and expands the directory description with concrete examples of the patterns it removes. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.

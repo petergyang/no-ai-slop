@@ -1,6 +1,6 @@
 {
   "name": "no-ai-slop",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Removes 20+ patterns of AI slop from any piece of writing.",
   "author": {
     "name": "Peter Yang",
@@ -19,7 +19,7 @@
   "interface": {
     "displayName": "No AI Slop",
     "shortDescription": "Remove 20+ AI slop patterns",
-    "longDescription": "This plugin removes 20+ patterns of AI slop from your writing without flattening your personal voice. It can also detect slop without guessing whether AI wrote the text.\n\nIt catches patterns like binary contrasts, throat-clearing openers, faux-insight setups, superficial analysis, importance puffery, weasel attribution, synonym cycling, and dramatic fragmentation. It also checks the fundamentals: lead with the point when it helps, use active voice, untangle hard-to-follow sentences, and prefer concrete numbers over abstractions.",
+    "longDescription": "This plugin removes 20+ patterns of AI slop from your writing without flattening your personal voice. Slop patterns that it removes include:\n\nBinary contrasts: “It’s not X. It’s Y.”\n\nThroat-clearing openers: “Here’s the thing,” “Let me be clear”\n\nFaux-insight setups: “What nobody tells you,” “The part everyone misses”\n\nColon reveals: “The best part: it learns.”\n\nFake-profound endings: “The future isn’t coming. It’s already here.”\n\n...and more.\n\nUse it to remove AI slop from your writing or detect named slop patterns in a piece of writing. If you like this plugin, please star it on GitHub: https://github.com/petergyang/no-ai-slop",
     "developerName": "Peter Yang",
     "category": "Productivity",
     "capabilities": [
@@ -31,8 +31,8 @@
     "privacyPolicyURL": "https://github.com/petergyang/no-ai-slop/blob/main/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/petergyang/no-ai-slop/blob/main/TERMS.md",
     "defaultPrompt": [
-      "edit (your writing)",
-      "Is this slop? (a writing excerpt)"
+      "(text)",
+      "is this slop? (text)"
     ],
     "brandColor": "#D30800",
     "composerIcon": "./assets/no-ai-slop.png",
