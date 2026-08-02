@@ -26,9 +26,29 @@ I use it during the middle 50% of my writing process to improve spelling, gramma
 
 ## Install
 
-Paste this into Claude Code, Codex, or your favorite AI harness:
+List the skill available from this repository:
 
-"Install this skill globally: [https://github.com/petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)"
+```sh
+npx skills add petergyang/no-ai-slop --list
+```
+
+Install it globally with the [Vercel Skills CLI](https://github.com/vercel-labs/skills):
+
+```sh
+npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes
+```
+
+Confirm that it is installed:
+
+```sh
+npx skills list --global
+```
+
+Update the installed skill later:
+
+```sh
+npx skills update no-ai-slop --global --yes
+```
 
 The repository also contains a skills-only plugin package for ChatGPT and Codex. Tagged releases attach a validated plugin ZIP, and the plugin is available in the public ChatGPT directory.
 
@@ -42,7 +62,7 @@ The repository also contains a skills-only plugin package for ChatGPT and Codex.
 [your draft]
 ```
 
-You get back the edited draft plus a short What changed section. The skill makes the minimum effective edit, then checks its own work against [eval.md](eval.md).
+You get back the edited draft plus a short What changed section. The skill makes the minimum effective edit, then checks its own work against [eval.md](skills/no-ai-slop/eval.md).
 
 **2. Detect slop.** Ask whether a piece reads as AI:
 
@@ -56,8 +76,8 @@ You get every pattern it found each with the quoted line.
 
 ## Files
 
-1. `SKILL.md`: The editing rules and workflow.
-2. `eval.md`: Pass/fail checks the skill runs on its own edits.
+1. `skills/no-ai-slop/SKILL.md`: The editing rules and workflow.
+2. `skills/no-ai-slop/eval.md`: Pass/fail checks the skill runs on its own edits.
 3. `.codex-plugin/plugin.json`: Metadata for the ChatGPT and Codex plugin.
 4. `scripts/build_plugin.py`: Builds and validates the plugin ZIP from the canonical skill files.
 
