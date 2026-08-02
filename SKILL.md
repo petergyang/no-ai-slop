@@ -39,6 +39,45 @@ If the goal is unclear, ask what the reader should think, feel, or do after read
 - **Preserve useful edge and character.** Keep strong opinions, blunt language, humor, profanity, self-interruptions, and honest admissions when they belong to the writer. Don't replace them with safer or more professional wording.
 - **Keep structure unless it's hurting the piece.** Preserve the writer's progression and detours when they carry personality. If you reorganize, say why in the What changed section.
 
+## Technical content: the fact-binding rule
+
+Switch this on whenever the draft contains numbers, units, named entities (products,
+systems, materials, versions, people), attributions, or causal claims. Most of the rules
+above optimise for compression. **Compression is where factual links break.** In technical
+writing a broken link is invisible, because the prose reads better while saying something
+false.
+
+The failure looks like this. Two adjacent paragraphs each describe a different subject and
+each is correct. Tightening merges them. The result is one fluent paragraph in which a
+measurement belonging to subject A now explains subject B. Nothing is misspelled, no number
+changed, and the claim is fabricated. This has actually happened and it survived several
+re-readings by the person who wrote it.
+
+**Rules, in force whenever the switch is on:**
+
+- **Never merge, split or reorder across a subject boundary without re-checking each fact
+  against the original.** A subject boundary is any point where the thing being described
+  changes, such as a different material, dataset, tool, version, run, or person.
+- **Numbers, units, entity names and attributions are frozen.** They survive byte-identical
+  unless the writer asked for a change. Rounding a figure, dropping a unit, or replacing a
+  specific name with a general one is a content change, not a style change.
+- **After editing, verify subject-fact binding.** For every claim carrying a number or a
+  name, ask: is it still attached to the same subject as in the original? Do this as a
+  separate pass, reading the edited draft against the original, not from memory of it.
+- **Do not remove a hedge that carries technical meaning.** "Within this model", "on the
+  solid basis", "computed rather than measured", "at one bar" look like throat-clearing and
+  are load-bearing. If a qualifier states a basis, a condition, or the limits of a method,
+  it stays. Cut hedges that express only reluctance, never hedges that state scope.
+- **Do not let the ban on synonym cycling flatten two different things into one word.** If
+  the draft uses two terms because they denote two quantities, keep both.
+- **If tightening would require you to know whether something is true, stop and ask.** The
+  editor's job is prose. Deciding that two facts can be joined is a technical judgement.
+
+**In the What changed section, list separately every sentence you touched that contained a
+number, a unit, a named entity or an attribution.** The writer can then re-verify exactly
+those and nothing else. Without that list they have to re-verify the whole draft, which
+means they will not.
+
 ## Words to cut
 
 Banned outright: delve, foster, leverage, utilize, facilitate, empower, streamline, robust, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, realm, beacon, multifaceted, meticulous, intricate, paramount, transformative, elevate, embark, supercharge, harness, ever-evolving.

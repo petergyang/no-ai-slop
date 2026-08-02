@@ -32,6 +32,17 @@ For detect requests, make sure the response names each pattern found with a quot
 7. Are colons sentence case unless grammar, a proper noun, a title, or code requires otherwise?
 8. Are em dashes used sparingly: Usually none in short copy, and only 1-2 in longer drafts when they clearly help?
 
+## Technical content
+
+Answer these only if the draft contains numbers, units, named entities, attributions, or causal claims. If it does, a fail here outranks every other check on this page.
+
+1. Is every number, unit, entity name and attribution byte-identical to the original, unless the writer asked for a change?
+2. Was any content merged, split or reordered across a subject boundary, meaning a change of material, dataset, tool, version, run or person? If so, was each affected fact re-checked against the original rather than from memory?
+3. For every claim carrying a number or a name, is it still attached to the same subject it was attached to in the original?
+4. Were qualifiers that state a basis, a condition, or the limits of a method left intact, rather than cut as throat-clearing?
+5. Where the draft used two different terms for two different quantities, were both kept rather than unified?
+6. Does the **What changed** section list separately every touched sentence that contained a number, a unit, a named entity or an attribution?
+
 ## Final read
 
 1. Was the edit checked directly against this file without requiring separate editor and evaluator agents?
