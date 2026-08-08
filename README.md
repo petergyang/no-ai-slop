@@ -69,7 +69,7 @@ No AI Slop checks for 20+ patterns, including:
 9. **Synonym cycling.** “The agent handles your email. The assistant drafts replies.”
 10. **Fake-profound endings.** “The future isn’t coming. It’s already here.”
 
-It also checks the fundamentals: Lead with the point when that helps, use active voice, untangle hard-to-follow sentences, and prefer concrete details over abstractions.
+It also checks the fundamentals: lead with the point when that helps, use active voice, untangle hard-to-follow sentences, and prefer concrete details over abstractions.
 
 ## What’s inside
 
