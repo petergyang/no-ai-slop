@@ -19,6 +19,8 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
         with:
           python-version: "3.12"
+      - name: Lint docs against the skill's own rules
+        run: python scripts/lint_docs.py
       - name: Build plugin
         run: python scripts/build_plugin.py
       - name: Upload workflow artifact
@@ -40,8 +42,20 @@ jobs:
         with:
           name: no-ai-slop-plugin
           path: dist
+      - name: Verify the archive matches the tag
+        # The archive is named from plugin.json; the release is named from the
+        # tag. Without this check a tag bumped without the manifest publishes the
+        # previous version's zip, and the glob below hides the mismatch.
+        run: |
+          expected="dist/no-ai-slop-plugin-${GITHUB_REF_NAME#v}.zip"
+          if [ ! -f "$expected" ]; then
+            echo "Tag ${GITHUB_REF_NAME} expects $expected, but the built archive is:" >&2
+            ls -1 dist/ >&2
+            echo "Bump \"version\" in .codex-plugin/plugin.json to match the tag." >&2
+            exit 1
+          fi
       - name: Attach package to GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
-        run: gh release create "${GITHUB_REF_NAME}" dist/no-ai-slop-plugin-*.zip --generate-notes --verify-tag
+        run: gh release create "${GITHUB_REF_NAME}" "dist/no-ai-slop-plugin-${GITHUB_REF_NAME#v}.zip" --generate-notes --verify-tag
