@@ -80,6 +80,10 @@ It also checks the fundamentals: Lead with the point when that helps, use active
 
 No AI Slop is also available as a plugin in ChatGPT.
 
+## Translations
+
+- [Chinese (简体中文)](https://github.com/shenxianpeng/no-ai-slop-zh) by [@shenxianpeng](https://github.com/shenxianpeng). The patterns are rewritten for Chinese writing rather than translated.
+
 ## Want more great AI skills?
 
 Check out [Behind the Craft](https://behindthecraft.com), my personal AI system with over a dozen other quality skills and courses.
