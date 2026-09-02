@@ -36,9 +36,8 @@ For detect requests, make sure the response names each pattern found with a quot
 
 ## Final read
 
-1. Was the edit checked directly against this file without requiring separate editor and evaluator agents?
-2. Does the draft avoid robotic symmetry, repeated sentence shapes, and stacked punchy fragments?
-3. Would the writer recognize the edited draft as their own voice?
-4. Would the edited draft sound natural if read to a sharp colleague?
-5. Does the final output include the full edited draft and a short **What changed** section?
-6. For detect requests, does the response name each pattern with a quoted line and a short fix, without rewriting, scoring, or claiming AI authorship?
+1. Does the draft avoid robotic symmetry, repeated sentence shapes, and stacked punchy fragments?
+2. Would the writer recognize the edited draft as their own voice?
+3. Would the edited draft sound natural if read to a sharp colleague?
+4. Does the final output include the full edited draft and a short **What changed** section?
+5. For detect requests, does the response name each pattern with a quoted line and a short fix, without rewriting, scoring, or claiming AI authorship?
