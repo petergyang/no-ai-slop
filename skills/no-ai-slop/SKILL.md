@@ -53,6 +53,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Binary contrasts.** "This is not X. It's Y." / "The question isn't X, it's Y." / "It's not just X but Y." State Y directly. "The question isn't the model. It's the eval." becomes "The eval matters more than the model."
 
+This applies to headings, bullet labels, table captions, and slide titles as well as sentences. A label that defines by negation forces the reader to reconstruct the missing half. To test one, cover the surrounding text and read the label alone. If it does not say what the section contains, rewrite it. "The trend, not the pair" becomes "Six-month trend."
+
 **Throat-clearing openers.** "Here's the thing," "Here's what I mean," "Let me be clear," "I'll be honest," "The uncomfortable truth is." Cut them and state the point.
 
 **Faux-insight setups.** "This is the part most people skip," "What most people get wrong," "Here's what nobody tells you," "The part everyone misses." These flatter the writer as the lone expert. Cut the setup and make the claim stand on its own. "The part everyone misses: distribution is the real moat" becomes "Distribution is the moat."
