@@ -87,6 +87,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Em dashes.** Do not use them as a default rhythm crutch. In short copy, use none. In longer drafts, 1-2 are fine if they clearly beat commas, periods, or parentheses. Remove clusters and decorative dashes.
 
+**Verdict sentences.** Blunt “That is…” or “This is…” after the facts—which sound like a model announcing the conclusion
+
 ## Workflow
 
 1. Read the full draft before editing.
