@@ -41,3 +41,4 @@ For detect requests, make sure the response names each pattern found with a quot
 3. Would the edited draft sound natural if read to a sharp colleague?
 4. Does the final output include the full edited draft and a short **What changed** section?
 5. For detect requests, does the response name each pattern with a quoted line and a short fix, without rewriting, scoring, or claiming AI authorship?
+6. For a non-English draft, is the draft still in its original language and checked against the matching file in `references/`?
