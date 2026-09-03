@@ -46,6 +46,14 @@ The skill removes the AI slop patterns, preserves your personal voice, and lists
 
 The skill quotes every slop pattern it found without guessing whether AI wrote the text.
 
+### Edit writing in another language
+
+```text
+/no-ai-slop (your Korean draft)
+```
+
+The skill edits in the language you wrote in. Korean drafts also get the Korean patterns: 번역투, 이중 피동, 명사화, 사물존칭, 빈 수식어.
+
 ### Generate slop for fun
 
 ```text
@@ -75,6 +83,7 @@ It also checks the fundamentals: Lead with the point when that helps, use active
 
 - [`SKILL.md`](skills/no-ai-slop/SKILL.md) contains the editing rules and workflow.
 - [`eval.md`](skills/no-ai-slop/eval.md) contains the checks the skill runs on its work.
+- [`references/korean.md`](skills/no-ai-slop/references/korean.md) contains the Korean-only patterns and checks.
 - [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json) contains the ChatGPT and Codex plugin metadata.
 - [`build_plugin.py`](scripts/build_plugin.py) builds and validates the plugin package.
 

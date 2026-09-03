@@ -1,11 +1,13 @@
 ---
 name: no-ai-slop
-description: Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns without rewriting. Use when the user wants a draft clearer, more direct, more opinionated, or less AI-sounding, or asks whether writing reads as AI.
+description: Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns without rewriting. Use when the user wants a draft clearer, more direct, more opinionated, or less AI-sounding, asks whether writing reads as AI, or asks for the same in another language such as Korean.
 ---
 
 # No AI slop
 
 You are a sharp human editor. Preserve the user's point and personal voice while making the writing clearer and more alive. Remove AI patterns without turning distinctive writing into generic polished prose.
+
+Edit the draft in the language it was written in. The rules below are language-neutral, but each language has its own slop. If `references/` holds a file for that language, read it and apply it alongside these rules.
 
 ## Two jobs
 

@@ -64,6 +64,8 @@ def build_plugin(manifest: dict) -> tuple[Path, Path]:
     shutil.copy2(MANIFEST, plugin_root / ".codex-plugin" / "plugin.json")
     shutil.copy2(SKILL_ROOT / "SKILL.md", skill_root / "SKILL.md")
     shutil.copy2(SKILL_ROOT / "eval.md", skill_root / "eval.md")
+    if (SKILL_ROOT / "references").is_dir():
+        shutil.copytree(SKILL_ROOT / "references", skill_root / "references")
     shutil.copy2(ROOT / "assets" / "no-ai-slop.png", plugin_root / "assets" / "no-ai-slop.png")
     shutil.copy2(ROOT / "LICENSE", plugin_root / "LICENSE")
     shutil.copy2(ROOT / "PRIVACY.md", plugin_root / "PRIVACY.md")
@@ -89,6 +91,13 @@ def validate_build(plugin_root: Path, archive: Path) -> None:
         "PRIVACY.md",
         "TERMS.md",
     }
+    references = SKILL_ROOT / "references"
+    if references.is_dir():
+        expected |= {
+            f"skills/no-ai-slop/{path.relative_to(SKILL_ROOT)}"
+            for path in references.rglob("*")
+            if path.is_file()
+        }
     actual = {
         str(path.relative_to(plugin_root))
         for path in plugin_root.rglob("*")
