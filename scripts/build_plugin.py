@@ -13,7 +13,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / ".codex-plugin" / "plugin.json"
 DIST = ROOT / "dist"
-SKILL_ROOT = ROOT / "skills" / "no-ai-slop"
+SKILLS_DIR = ROOT / "skills"
+STATIC_FILES = ("LICENSE", "PRIVACY.md", "TERMS.md")
+
+
+def skill_dirs() -> list[Path]:
+    """Every skill the manifest's ./skills/ directory advertises."""
+    found = sorted(d for d in SKILLS_DIR.iterdir()
+                   if d.is_dir() and (d / "SKILL.md").is_file())
+    if not found:
+        raise SystemExit(f"No skills with a SKILL.md under {SKILLS_DIR.relative_to(ROOT)}")
+    return found
 
 
 def parse_args() -> argparse.Namespace:
@@ -46,7 +56,10 @@ def validate_source(manifest: dict) -> None:
     if len(prompts) > 3 or any(len(prompt) > 128 for prompt in prompts):
         raise SystemExit("Starter prompts must contain at most three entries of 128 characters or fewer")
 
-    for source in (SKILL_ROOT / "SKILL.md", SKILL_ROOT / "eval.md", ROOT / "assets" / "no-ai-slop.png"):
+    sources = [ROOT / "assets" / "no-ai-slop.png"]
+    for skill in skill_dirs():
+        sources += [skill / "SKILL.md", skill / "eval.md"]
+    for source in sources:
         if not source.is_file():
             raise SystemExit(f"Missing package source: {source.relative_to(ROOT)}")
 
@@ -56,18 +69,18 @@ def build_plugin(manifest: dict) -> tuple[Path, Path]:
     if plugin_root.exists():
         shutil.rmtree(plugin_root)
 
-    skill_root = plugin_root / "skills" / "no-ai-slop"
     (plugin_root / ".codex-plugin").mkdir(parents=True)
     (plugin_root / "assets").mkdir(parents=True)
-    skill_root.mkdir(parents=True)
 
     shutil.copy2(MANIFEST, plugin_root / ".codex-plugin" / "plugin.json")
-    shutil.copy2(SKILL_ROOT / "SKILL.md", skill_root / "SKILL.md")
-    shutil.copy2(SKILL_ROOT / "eval.md", skill_root / "eval.md")
+    for skill in skill_dirs():
+        dest = plugin_root / "skills" / skill.name
+        dest.mkdir(parents=True)
+        shutil.copy2(skill / "SKILL.md", dest / "SKILL.md")
+        shutil.copy2(skill / "eval.md", dest / "eval.md")
     shutil.copy2(ROOT / "assets" / "no-ai-slop.png", plugin_root / "assets" / "no-ai-slop.png")
-    shutil.copy2(ROOT / "LICENSE", plugin_root / "LICENSE")
-    shutil.copy2(ROOT / "PRIVACY.md", plugin_root / "PRIVACY.md")
-    shutil.copy2(ROOT / "TERMS.md", plugin_root / "TERMS.md")
+    for name in STATIC_FILES:
+        shutil.copy2(ROOT / name, plugin_root / name)
 
     archive = DIST / f"no-ai-slop-plugin-{manifest['version']}.zip"
     if archive.exists():
@@ -80,15 +93,9 @@ def build_plugin(manifest: dict) -> tuple[Path, Path]:
 
 
 def validate_build(plugin_root: Path, archive: Path) -> None:
-    expected = {
-        ".codex-plugin/plugin.json",
-        "assets/no-ai-slop.png",
-        "skills/no-ai-slop/SKILL.md",
-        "skills/no-ai-slop/eval.md",
-        "LICENSE",
-        "PRIVACY.md",
-        "TERMS.md",
-    }
+    expected = {".codex-plugin/plugin.json", "assets/no-ai-slop.png", *STATIC_FILES}
+    for skill in skill_dirs():
+        expected |= {f"skills/{skill.name}/SKILL.md", f"skills/{skill.name}/eval.md"}
     actual = {
         str(path.relative_to(plugin_root))
         for path in plugin_root.rglob("*")
@@ -97,12 +104,12 @@ def validate_build(plugin_root: Path, archive: Path) -> None:
     if expected != actual:
         raise SystemExit(f"Unexpected package files: expected {sorted(expected)}, found {sorted(actual)}")
 
-    packaged_skill = plugin_root / "skills" / "no-ai-slop" / "SKILL.md"
-    packaged_eval = plugin_root / "skills" / "no-ai-slop" / "eval.md"
-    if packaged_skill.read_bytes() != (SKILL_ROOT / "SKILL.md").read_bytes():
-        raise SystemExit("Packaged SKILL.md does not match the canonical file")
-    if packaged_eval.read_bytes() != (SKILL_ROOT / "eval.md").read_bytes():
-        raise SystemExit("Packaged eval.md does not match the canonical file")
+    for skill in skill_dirs():
+        for name in ("SKILL.md", "eval.md"):
+            packaged = plugin_root / "skills" / skill.name / name
+            if packaged.read_bytes() != (skill / name).read_bytes():
+                raise SystemExit(
+                    f"Packaged skills/{skill.name}/{name} does not match the canonical file")
     if not zipfile.is_zipfile(archive):
         raise SystemExit("Plugin archive is not a valid ZIP file")
 
