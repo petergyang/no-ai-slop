@@ -51,6 +51,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 ## Patterns to cut
 
+These patterns are defaults, not overrides. Where a pattern below conflicts with the editing principles above, the principles win: keep the line when it carries the writer's real voice.
+
 **Binary contrasts.** "This is not X. It's Y." / "The question isn't X, it's Y." / "It's not just X but Y." State Y directly. "The question isn't the model. It's the eval." becomes "The eval matters more than the model."
 
 **Throat-clearing openers.** "Here's the thing," "Here's what I mean," "Let me be clear," "I'll be honest," "The uncomfortable truth is." Cut them and state the point.
@@ -73,7 +75,7 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Negative listing.** "Not a X. Not a Y. A Z." Just say Z.
 
-**Dramatic fragmentation.** "X. And Y. And Z." or "That's it. That's the whole thing." Use complete sentences.
+**Dramatic fragmentation.** "X. And Y. And Z." or "That's it. That's the whole thing." Restore complete sentences when fragments are stacked for rhythm or drama. A single fragment that matches how the writer talks is voice, not slop, and the editing principles above take precedence.
 
 **Robotic rhythm.** Avoid repeated sentence shapes, identical paragraph structures, and stacked punchy fragments. Vary the shape only when it helps the point.
 
