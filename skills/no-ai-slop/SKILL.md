@@ -43,7 +43,9 @@ If the goal is unclear, ask what the reader should think, feel, or do after read
 
 ## Words to cut
 
-Banned outright: delve, foster, leverage, utilize, facilitate, empower, streamline, robust, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, realm, beacon, multifaceted, meticulous, intricate, paramount, transformative, elevate, embark, supercharge, harness, ever-evolving.
+Banned outright: delve, utilize, empower, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, multifaceted, meticulous, intricate, paramount, transformative, embark, supercharge, ever-evolving. None of these is the right word in ordinary prose. Cut them wherever they appear.
+
+Banned in the AI sense, kept as terms of art: foster, leverage, facilitate, streamline, robust, realm, beacon, elevate, harness. Each of these also names a real thing, and in that use it is the correct word: a test harness, a Kerberos realm, a BLE beacon, robust standard errors, financial leverage, streamline flow, a foster parent, elevate the limb, elevated privileges. Cut them when they are reaching for weight the sentence has not earned. Keep them when they name the actual thing, and do not reach for a worse synonym to avoid the list.
 
 Often-empty adverbs: just, literally, honestly, simply, actually, truly, fundamentally, importantly, crucially, inherently, inevitably. Cut them when they add nothing. Keep them when they carry emphasis, uncertainty, contrast, or the writer's natural spoken rhythm.
 
