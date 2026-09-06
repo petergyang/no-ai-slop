@@ -21,6 +21,7 @@ For detect requests, make sure the response names each pattern found with a quot
 ## Words to cut
 
 1. Are banned words, filler phrases, often-empty adverbs, and inflated claims removed unless quoted as examples?
+2. For a word banned only in its AI sense, is it kept where it names the actual thing and cut everywhere else, with no synonym substituted to avoid the list?
 
 ## Patterns to cut
 
