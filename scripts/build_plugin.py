@@ -11,7 +11,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / ".codex-plugin" / "plugin.json"
+CODEX_MANIFEST = ROOT / ".codex-plugin" / "plugin.json"
+CLAUDE_MANIFEST = ROOT / ".claude-plugin" / "plugin.json"
+MARKETPLACE = ROOT / ".claude-plugin" / "marketplace.json"
 DIST = ROOT / "dist"
 SKILL_ROOT = ROOT / "skills" / "no-ai-slop"
 
@@ -23,6 +25,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def validate_source(manifest: dict) -> None:
+    """Validate the Codex manifest and the files that go into the archive."""
     required = ("name", "version", "description", "author", "skills", "interface")
     missing = [key for key in required if not manifest.get(key)]
     if missing:
@@ -51,6 +54,44 @@ def validate_source(manifest: dict) -> None:
             raise SystemExit(f"Missing package source: {source.relative_to(ROOT)}")
 
 
+def validate_claude_source(codex_manifest: dict) -> None:
+    """Validate the Claude Code manifest and marketplace, and keep them in sync with Codex."""
+    for source in (CLAUDE_MANIFEST, MARKETPLACE):
+        if not source.is_file():
+            raise SystemExit(f"Missing package source: {source.relative_to(ROOT)}")
+
+    manifest = json.loads(CLAUDE_MANIFEST.read_text(encoding="utf-8"))
+    missing = [key for key in ("name", "version", "description") if not manifest.get(key)]
+    if missing:
+        raise SystemExit(f"Missing Claude manifest fields: {', '.join(missing)}")
+
+    marketplace = json.loads(MARKETPLACE.read_text(encoding="utf-8"))
+    missing_marketplace = [key for key in ("name", "owner", "plugins") if not marketplace.get(key)]
+    if missing_marketplace:
+        raise SystemExit(f"Missing marketplace fields: {', '.join(missing_marketplace)}")
+    if not marketplace["owner"].get("name"):
+        raise SystemExit("Marketplace owner requires a name")
+
+    entries = [entry for entry in marketplace["plugins"] if entry.get("name") == manifest["name"]]
+    if len(entries) != 1:
+        raise SystemExit(f"Marketplace must list exactly one {manifest['name']} plugin entry")
+    entry = entries[0]
+    if entry.get("source") != "./":
+        raise SystemExit("Marketplace entry must point at the repository root with a './' source")
+
+    # The three manifests are edited by hand, so catch drift before it ships.
+    names = {"Codex": codex_manifest["name"], "Claude": manifest["name"], "marketplace": entry["name"]}
+    if len(set(names.values())) != 1:
+        raise SystemExit(f"Plugin name differs across manifests: {names}")
+    versions = {"Codex": codex_manifest["version"], "Claude": manifest["version"], "marketplace": entry.get("version")}
+    if len(set(versions.values())) != 1:
+        raise SystemExit(f"Plugin version differs across manifests: {versions}")
+
+    skill_frontmatter_name = f"name: {manifest['name']}"
+    if skill_frontmatter_name not in (SKILL_ROOT / "SKILL.md").read_text(encoding="utf-8"):
+        raise SystemExit(f"SKILL.md frontmatter must declare '{skill_frontmatter_name}'")
+
+
 def build_plugin(manifest: dict) -> tuple[Path, Path]:
     plugin_root = DIST / "no-ai-slop"
     if plugin_root.exists():
@@ -58,10 +99,12 @@ def build_plugin(manifest: dict) -> tuple[Path, Path]:
 
     skill_root = plugin_root / "skills" / "no-ai-slop"
     (plugin_root / ".codex-plugin").mkdir(parents=True)
+    (plugin_root / ".claude-plugin").mkdir(parents=True)
     (plugin_root / "assets").mkdir(parents=True)
     skill_root.mkdir(parents=True)
 
-    shutil.copy2(MANIFEST, plugin_root / ".codex-plugin" / "plugin.json")
+    shutil.copy2(CODEX_MANIFEST, plugin_root / ".codex-plugin" / "plugin.json")
+    shutil.copy2(CLAUDE_MANIFEST, plugin_root / ".claude-plugin" / "plugin.json")
     shutil.copy2(SKILL_ROOT / "SKILL.md", skill_root / "SKILL.md")
     shutil.copy2(SKILL_ROOT / "eval.md", skill_root / "eval.md")
     shutil.copy2(ROOT / "assets" / "no-ai-slop.png", plugin_root / "assets" / "no-ai-slop.png")
@@ -82,6 +125,7 @@ def build_plugin(manifest: dict) -> tuple[Path, Path]:
 def validate_build(plugin_root: Path, archive: Path) -> None:
     expected = {
         ".codex-plugin/plugin.json",
+        ".claude-plugin/plugin.json",
         "assets/no-ai-slop.png",
         "skills/no-ai-slop/SKILL.md",
         "skills/no-ai-slop/eval.md",
@@ -90,7 +134,7 @@ def validate_build(plugin_root: Path, archive: Path) -> None:
         "TERMS.md",
     }
     actual = {
-        str(path.relative_to(plugin_root))
+        path.relative_to(plugin_root).as_posix()
         for path in plugin_root.rglob("*")
         if path.is_file()
     }
@@ -109,8 +153,9 @@ def validate_build(plugin_root: Path, archive: Path) -> None:
 
 def main() -> None:
     args = parse_args()
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    manifest = json.loads(CODEX_MANIFEST.read_text(encoding="utf-8"))
     validate_source(manifest)
+    validate_claude_source(manifest)
     plugin_root, archive = build_plugin(manifest)
     validate_build(plugin_root, archive)
     print(f"Built {archive.relative_to(ROOT)}")
