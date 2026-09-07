@@ -28,6 +28,17 @@ You can also install it with `npx`:
 npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes
 ```
 
+### Install it as a Claude Code plugin
+
+In Claude Code you can install the repo as a plugin instead:
+
+```text
+/plugin marketplace add petergyang/no-ai-slop
+/plugin install no-ai-slop@no-ai-slop
+```
+
+Plugins namespace their skills, so this route gives you `/no-ai-slop:no-ai-slop` rather than the shorter `/no-ai-slop`. Use one of the installs above if you want the short command.
+
 ## How to use No AI Slop
 
 ### Edit your writing
@@ -76,6 +87,8 @@ It also checks the fundamentals: Lead with the point when that helps, use active
 - [`SKILL.md`](skills/no-ai-slop/SKILL.md) contains the editing rules and workflow.
 - [`eval.md`](skills/no-ai-slop/eval.md) contains the checks the skill runs on its work.
 - [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json) contains the ChatGPT and Codex plugin metadata.
+- [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) contains the Claude Code plugin metadata.
+- [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) lets Claude Code install this repo as a marketplace.
 - [`build_plugin.py`](scripts/build_plugin.py) builds and validates the plugin package.
 
 No AI Slop is also available as a plugin in ChatGPT.
