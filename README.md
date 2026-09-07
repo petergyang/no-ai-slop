@@ -30,14 +30,14 @@ npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes
 
 ### Install it as a Claude Code plugin
 
-In Claude Code you can install the repo as a plugin instead:
+Claude Code can install this repo as a plugin, which tracks the installed version and lets you update or remove the skill with `/plugin update` and `/plugin uninstall`:
 
 ```text
 /plugin marketplace add petergyang/no-ai-slop
-/plugin install no-ai-slop@no-ai-slop
+/plugin install no-ai-slop
 ```
 
-Plugins namespace their skills, so this route gives you `/no-ai-slop:no-ai-slop` rather than the shorter `/no-ai-slop`. Use one of the installs above if you want the short command.
+Claude Code namespaces plugin skills, so you invoke it as `/no-ai-slop:no-ai-slop`. For the shorter `/no-ai-slop`, use the `npx skills add` install above.
 
 ## How to use No AI Slop
 
