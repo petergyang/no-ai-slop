@@ -1,5 +1,7 @@
 # No AI Slop
 
+[![Lintspace Score](https://lintspace.com/api/badge/eff7f717-4e83-4835-9f07-08a48f026cf4.svg)](https://lintspace.com/verdict/eff7f717-4e83-4835-9f07-08a48f026cf4)
+
 Remove 20+ patterns of AI slop from your writing without flattening your personal voice.
 
 https://github.com/user-attachments/assets/f3055450-78eb-4672-880a-88a4fa54bde9
