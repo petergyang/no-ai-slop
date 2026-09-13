@@ -7,7 +7,9 @@ import argparse
 import json
 import shutil
 import zipfile
+from collections.abc import Mapping
 from pathlib import Path
+from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,7 +24,7 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def validate_source(manifest: dict) -> None:
+def validate_source(manifest: Mapping[str, Any]) -> None:
     required = ("name", "version", "description", "author", "skills", "interface")
     missing = [key for key in required if not manifest.get(key)]
     if missing:
@@ -51,7 +53,7 @@ def validate_source(manifest: dict) -> None:
             raise SystemExit(f"Missing package source: {source.relative_to(ROOT)}")
 
 
-def build_plugin(manifest: dict) -> tuple[Path, Path]:
+def build_plugin(manifest: Mapping[str, Any]) -> tuple[Path, Path]:
     plugin_root = DIST / "no-ai-slop"
     if plugin_root.exists():
         shutil.rmtree(plugin_root)
@@ -90,7 +92,7 @@ def validate_build(plugin_root: Path, archive: Path) -> None:
         "TERMS.md",
     }
     actual = {
-        str(path.relative_to(plugin_root))
+        path.relative_to(plugin_root).as_posix()
         for path in plugin_root.rglob("*")
         if path.is_file()
     }
