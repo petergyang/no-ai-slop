@@ -63,6 +63,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Importance puffery.** "Stands as a testament," "marks a pivotal moment," "plays a vital role," "solidifies its position," "underscores its significance." State the fact and let the reader judge whether it matters. "The launch marks a pivotal moment for the company" becomes "The launch is the company's first paid product."
 
+**Structure signposts.** A sentence that narrates the document instead of delivering it: "Answers to the four questions first," "One more result, offered as evidence rather than as a workaround." If the reader can see the structure from the content itself, a numbered list being its own table of contents, the signpost adds nothing. Delete it and start with the first answer, the first measurement, the result itself. A signpost earns its place only when the structure is genuinely non-obvious, such as a one-line roadmap at the top of a long document.
+
 **Interpretive metadiscourse.** Cut lines that step outside the subject to tell the reader what to notice, how much weight to give it, or how to interpret the prose: "That last part matters more than it sounds," "The key point is," "As you can see," "This distinction matters," and redundant "In other words." If the point is clear, delete the aside. Otherwise, replace it with support or facts already in the content.
 
 **Weasel attribution.** "Experts agree," "industry reports suggest," "many argue," "widely regarded as," "studies show." Name the source or cut the claim. If the user has no source, ask instead of inventing one.

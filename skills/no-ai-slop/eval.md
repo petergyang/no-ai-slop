@@ -28,11 +28,12 @@ For detect requests, make sure the response names each pattern found with a quot
 2. Are faux-insight setups, colon reveals, superficial analysis, fake-strong verbs, synonym cycling, dramatic fragments, and robotic rhythm fixed?
 3. Are importance puffery and weasel attribution replaced with plain facts and named sources, or flagged for the user when no source exists?
 4. Is interpretive metadiscourse removed, including authorial metacommentary, reader guidance, emphasis markers, and redundant glossing?
-5. Are fake-profound kicker lines deleted instead of rewritten into better metaphors?
-6. Are summary-recap endings cut so the piece ends on a concrete point, takeaway, or next action?
-7. Is formatting slop removed: Emoji headings, decorative bold, bullets that should be prose, headers over tiny sections?
-8. Are colons sentence case unless grammar, a proper noun, a title, or code requires otherwise?
-9. Are em dashes used sparingly: Usually none in short copy, and only 1-2 in longer drafts when they clearly help?
+5. Are structure signposts removed, including sentences that describe what the message contains rather than containing it?
+6. Are fake-profound kicker lines deleted instead of rewritten into better metaphors?
+7. Are summary-recap endings cut so the piece ends on a concrete point, takeaway, or next action?
+8. Is formatting slop removed: Emoji headings, decorative bold, bullets that should be prose, headers over tiny sections?
+9. Are colons sentence case unless grammar, a proper noun, a title, or code requires otherwise?
+10. Are em dashes used sparingly: Usually none in short copy, and only 1-2 in longer drafts when they clearly help?
 
 ## Final read
 
