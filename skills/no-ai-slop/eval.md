@@ -34,6 +34,16 @@ For detect requests, make sure the response names each pattern found with a quot
 8. Are colons sentence case unless grammar, a proper noun, a title, or code requires otherwise?
 9. Are em dashes used sparingly: Usually none in short copy, and only 1-2 in longer drafts when they clearly help?
 
+## Structural patterns
+
+1. Does the piece avoid announcing its own structure, with no thesis-plus-roadmap preview before the first section?
+2. Does it end on a concrete point, takeaway, or next action rather than restating the thesis or summarizing itself?
+3. Is the subject free of a legacy-versus-modern framing spine?
+4. Is freshness framing ("modern," "next-generation," "the future of X") cut, or replaced with the specific change and its date?
+5. Are claims anchored in specific dates or periods where the draft's material carries them, with no dates invented?
+6. Does credibility rest on specific facts, examples, or named sources rather than institutional tone?
+7. For public-facing pieces, is there a concrete route for the reader to respond, contribute, or act, where the format allows one?
+
 ## Final read
 
 1. Does the draft avoid robotic symmetry, repeated sentence shapes, and stacked punchy fragments?

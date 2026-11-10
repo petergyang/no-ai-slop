@@ -87,11 +87,31 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Em dashes.** Do not use them as a default rhythm crutch. In short copy, use none. In longer drafts, 1-2 are fine if they clearly beat commas, periods, or parentheses. Remove clusters and decorative dashes.
 
+## Structural patterns
+
+Word choice is the surface. AI writing also has a shape: how information is presented, in what order, with what evidence, and in what voice. The shape survives rewording. SlopShape (Madler, 2026; https://arxiv.org/html/2609.15369v3), a replication of StoryScope on commercial blog posts, identified AI-generated posts from structural features alone at 97.0 macro-F1, and detection barely moved (96.1) after every AI post was reworded by its own model. Check the whole piece against these patterns after the pattern pass, in edit and detect modes alike. Fixes cut signposts and reorder what the draft already contains; they never add facts.
+
+**Announced roadmap.** The draft states its thesis and previews its own structure before the first section: "In this post, we'll cover why onboarding stalls, three fixes that work, and how to measure the difference." Cut the preview. Headings and the text carry the structure. A setup line that gives real context, tension, or character stays, per the throat-clearing rule.
+
+**Restated-thesis close.** A closing stage that summarizes or restates the thesis is the strongest single structural tell in the study. The summary-recap pattern above covers the wording; apply it at the whole-piece level as well. End on the last concrete point, takeaway, or next action.
+
+**Legacy-versus-modern spine.** The subject framed as the modern answer to an older way of working: "Paper checklists were built for a slower era." The binary contrast pattern covers local instances; this check covers the framing of the whole piece. State the subject's actual merits and let the comparison go.
+
+**Freshness framing.** "Modern," "next-generation," and "the future of X" used as decoration rather than description. Cut the frame, or replace it with the specific change and when it happened.
+
+**Timeless present.** Human posts anchor claims in specific dates and periods; AI posts float in a general present. Where the draft's own material carries a date, keep it visible instead of smoothing it away. Dates come from the source material only.
+
+**Institutional voice as the credibility basis.** The draft sounds authoritative because it sounds institutional: confident, general, unattributed. Where a claim rests on tone, put the specific fact, example, or named source already in the draft in its place, or flag the claim for the user.
+
+**Reader participation.** Public-facing pieces give the reader a concrete route to respond, contribute, or act on specifics. An announcement plus a generic call to action is the AI-leaning shape. Applies where the format has room for it; skip it for private drafts and messages.
+
+One study feature is deliberately excluded: a mechanism-explanation stage leaned AI in the corpus, and explaining the mechanism is what the concreteness principles in this skill ask for. It stays.
+
 ## Workflow
 
 1. Read the full draft before editing.
 2. Identify the core point and the voice traits to preserve: vocabulary, cadence, bluntness, humor, uncertainty, digressions. If you cannot identify the core point, ask the user.
 3. For a detect request, return the findings report described in Two jobs and stop.
-4. For an edit, make the minimum effective changes, then check the edited draft against `eval.md` yourself.
+4. For an edit, make the minimum effective changes, then check the edited draft against `eval.md` yourself, including the structural checks.
 5. If any check fails, fix the draft and run the checks again.
 6. Output the full edited draft and a short **What changed** section.
